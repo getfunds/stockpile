@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Technor-Semibold';
+  src: url('../../public/fonts/Technor-Semibold.woff2') format('woff2'),
+       url('../../public/fonts/Technor-Semibold.woff') format('woff');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Technor-Bold';
+  src: url('../../public/fonts/Technor-Bold.woff2') format('woff2'),
+       url('../../public/fonts/Technor-Bold.woff') format('woff');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Technor-Black';
+  src: url('../../public/fonts/Technor-Black.woff2') format('woff2'),
+       url('../../public/fonts/Technor-Black.woff') format('woff');
+       font-weight: 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --tw-color-orange-900: rgb(124 45 18);
+  --tw-color-orange-200: rgb(254 215 170);
+}
+
+body {
+  color: #E1E1E1;
+  background-size: cover;
+  overscroll-behavior: contain;
+  background: radial-gradient(49% 70% at -10% -35%, #FFAC0345 8%, #073AFF00 100%),radial-gradient(49% 50% at 93% -33%, #FFAC0345 3%, #073AFF00 100%),radial-gradient(49% 62% at -20% 120%, #FFAC0345 0%, #073AFF00 100%),radial-gradient(49% 81% at 117% 129%, #FFAC0345 5%, #073AFF00 100%);
+  /* radial-gradient(75% 75% at -1% 5%, #FFA94540 0%, #0000 55%),linear-gradient(280deg, #FFA94530 0%, #FFA9453D 3%, #0000 22%); */
+  /*
+  linear-gradient(
+    230deg,
+    hsl(0deg 0% 100%) 1%,
+    hsl(300deg 100% 100%) 33%,
+    hsl(300deg 100% 100%) 45%,
+    hsl(300deg 100% 100%) 55%,
+    hsl(300deg 100% 100%) 63%,
+    hsl(0deg 0% 100%) 69%,
+    hsl(29deg 100% 97%) 75%,
+    hsl(29deg 100% 94%) 81%,
+    hsl(29deg 100% 91%) 86%,
+    hsl(29deg 100% 89%) 92%,
+    hsl(29deg 100% 86%) 100%
+  );
+  */
+}
+
+.webgl {
+  z-index: -10;
+}
